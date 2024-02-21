@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.container .btn1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(45, 27, 3);
+  color: black;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.btn1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 13px;
+  right: -25px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.btn1:hover span {
+  padding-right: 30px;
+  background-color: rgb(215, 191, 156);
+  color: white;
+  border-radius: 5px;
+}
+
+.btn1:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: white;
+  font-size: 40px;
+}
+
+.container .btn2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(58, 40, 12);
+  color: black;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 13px;
+  right: -25px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.btn2:hover span {
+  padding-right: 30px;
+  background-color: rgb(215, 191, 156);
+  color: white;
+  border-radius: 5px;
+}
+
+.btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: white;
+  font-size: 40px;
+}
+
+.container .btn3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(77, 47, 12);
+  color: black;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.btn3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 13px;
+  right: -25px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.btn3:hover span {
+  padding-right: 30px;
+  background-color: rgb(215, 191, 156);
+  color: white;
+  border-radius: 5px;
+}
+
+.btn3:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: white;
+  font-size: 40px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.dropbtn {
+  background-color: rgb(55, 77, 43);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(77, 47, 12);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 9px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(77, 47, 12);
+	border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(38, 53, 30);}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: rgb(215, 191, 156);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 150px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: rgb(215, 191, 156);
+  padding: 150px;
+  text-align: center;
+}
+
+.p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a:link {
+  color: rgb(254, 255, 255);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(254, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body {
+	margin: 0;
+	background-color: rgb(215, 191, 156);
+}
+</style>
+</head>
+<body>
+	
+	<div class="header">
+		<div class="p1">
+  			<h2>Writers' community</h2>
+  		</div>
+	</div>
+
+	<div class="row">
+	  	<div class="column" style="background-color:rgb(45, 27, 3);">
+			<div class="container">
+				<button class="btn1">
+					<span>
+						<a href="tabela_Carti.jsp">
+							<div class="p1">
+								<b><strong><h1>Books</h1></strong></b>
+							</div>
+						</a>
+					</span>
+				</button>
+			</div>  	
+	    </div>
+	    
+	  	<div class="column" style="background-color:rgb(58, 40, 12);">
+			<div class="container">
+				<button class="btn2">
+					<span>	
+			  			<a href="tabela_Autori.jsp">
+							<div class="p1">
+							  	<b><strong><h1>Authors</h1></strong></b>
+							</div>
+						</a>
+					</span>
+				</button>
+			</div>			  	
+	  	</div>  
+	  	
+	  	<div class="column" style="background-color:rgb(77, 47, 12);">
+			<div class="container">
+				<button class="btn3">	
+					<span>
+			  			<a href="tabela_Scriere.jsp">
+							<div class="p1">
+								<b><strong><h1>Contributions</h1></strong></b>
+							</div>
+						</a>
+					</span>
+				</button>
+	  		</div>  
+	  	</div>
+	</div>
+
+	<div class="footer">
+		<div class="p1">
+  		<div class="dropdown">
+			  
+  		<button class="dropbtn"><div class="p1">Modify:</div></button>
+  				
+  			<div class="dropdown-content">	  
+    		<a href="modifica_Carte.jsp"><b><strong>Book</strong></b></a>
+    		<a href="modifica_Autor.jsp"><b><strong>Author</strong></b></a>
+    		<a href="modifica_Scriere.jsp"><b><strong>Contribution</strong></b></a>
+  			</div>
+  		</div>
+		</div>
+	</div>	
+</body>
+</html>
